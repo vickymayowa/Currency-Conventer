@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CURRENCY CONVENTER</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./bootstrap-5.2.2-dist/css/bootstrap.css">
+</head>
+<body>
+  <div class="container col-lg-4 shadow-5 shadow px-5 rounded rounded-4 col-sm-6 fw-lighter mt-3">
+      <p class="fw-ligther mt-5 fs-5" align="center" style="">VICKY CURRENCY CONVENTER</h1>
+      <marquee behavior="left" direction="" class="fw-5 fw-lighter">kindly Checkout your Currency with the Button Below</marquee>
+      <input type="text" class="form-control" placeholder="Enter Your Amount">
+      <h3 id="input"  align="center">Result here </h3>
+      <div class="col-sm-6 col-lg-12 fw-lighter px-5 ms-3 mt-4">
+        <!-- <button class="btn btn-info mt-3" onclick="naira()">NAIRA TO DOLLAR</button> -->
+        <button class="btn btn-success mt-3" onclick="dollar()">DOLLAR TO NAIRA</button>
+        <button class="btn btn-primary mt-3" onclick="pounds()">POUNDS TO DOLLAR</button>
+        <button class="btn btn-secondary mt-3" onclick="vicky()">DOLLAR TO POUNDS</button>
+        <button class="btn btn-info mt-3 mb-3" onclick="nairapounds()">NAIRA TO POUNDS</button>
+      </div>
+      </div>
+     <script>
+      setTimeout
+        // function naira(){
+        //   var currency = prompt ('Enter Amount')
+        //   var naira = 850;
+        //   var totalnaira = currency/naira
+        //   alert ("#" + totalnaira)
+        function dollar(){
+          var currency = prompt("Enter your Amount Here")
+          var dollar = 730;
+          var totaldollar = currency /dollar 
+          
+          input.innerHTML = (`$`+ totaldollar)
+        }
+        function pounds(){
+          var currency = prompt ('Enter amount')
+          var pounds = 530 
+          var totalpounds = currency/pounds
+          input.innerHTML = (totalpounds)
+        }
+        function nairapounds(){
+          var currency = prompt ('Enter Amount')
+          var pounds = 513 
+          var totalpounds = currency /pounds
+          alert(totalpounds)
+        }
+         function vicky(){
+          var currency = prompt ("Enter amount")
+          var dollar = 530 
+          var totaldollar = currency/ dollar
+          alert(totaldollar)
+         }
+     </script>
+</body>
+</html>
